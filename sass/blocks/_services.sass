@@ -1,0 +1,103 @@
+.services
+    width: 100%
+    min-height: 100vh
+    background: linear-gradient(360deg, #ffffff, #f2f2f8)
+    border-top-left-radius: 100% 30%
+    margin-bottom: 100px
+    &__text
+        padding-top: 200px 
+        &_topic
+            font-family: Nexa
+            font-size: 25px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.2em
+            color: #6422db    
+        &_title
+            margin-top: 39px
+            font-family: Nexa XBold
+            font-size: 58px
+            line-height: 59px
+            font-weight: 700
+            color: #25234d
+        &_subtitle
+            margin-top: 48px
+            font-family: Nexa
+            font-size: 18px
+            line-height: 31px
+            font-weight: 400
+            color: #25234d
+        &_but
+            margin-top: 44px
+            width: 270px
+            height: 68px
+            border: none
+            text-decoration: none
+            border-radius: 34px
+            background-color: #ffc727
+            font-family: Nexa XBold
+            text-transform: uppercase
+            font-size: 17px
+            font-weight: 700
+            color: #000
+    &__items
+        padding-top: 115px
+        display: grid
+        grid-template-columns: 250px 250px
+        grid-template-rows: repeat(7, 65px )
+        grid-column-gap: 40px
+        grid-row-gap: 30px 
+
+        &_1, &_2, &_3, &_4
+            width: 250px
+            height: 250px
+            background-color: #ffffff
+            box-shadow: 0px 30px 70px 0px rgba(223,227,234,0.5)
+            border-radius: 5px
+            .services__item_wrapper
+                margin-top: 30px
+                margin-left: 20px
+                margin-right: 20px
+            .services__title
+                margin-top: 20px
+                font-family: Nexa
+                font-size: 18px
+                line-height: 1.2
+                font-weight: 700
+                color: #25234d
+            .services__subtitle
+                margin-top: 15px
+                font-family: Nexa
+                font-size: 14px
+                line-height: 20px
+                text-align: justify
+                font-weight: 400
+                color: #25234d
+        &_1
+            grid-row-start: 2
+            grid-row-end: 5
+            transition: 1s
+        &_2
+            grid-row-start: 1
+            grid-row-end: 4
+            transition: 1s
+        &_3
+            grid-row-start: 5
+            grid-row-end: 7
+            transition: 1s
+        &_4
+            grid-row-start: 4
+            grid-row-end: 6
+            transition: 1s
+
+        &_1:hover
+            background-color: #f3ff85
+    
+        &_2:hover
+            background-color: #cad6ff
+        
+        &_3:hover
+            background-color: #ffc4f2
+            
+        &_4:hover
+            background-color: #bdfbff
